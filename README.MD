@@ -1,8 +1,4 @@
 
-Author:Stefan Mitchell
-Date: September 16,2026
-
-Description of Project:
 nodeJS CLI-based number guessing game written in Typescript
 
 
