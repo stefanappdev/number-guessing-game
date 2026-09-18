@@ -1,3 +1,3 @@
-declare const executeGame: (RNGnumber: number, difficulty: string, chances: number) => void;
+declare const executeGame: (difficulty: string, chances: number) => Promise<void>;
 export default executeGame;
 //# sourceMappingURL=executeGame.d.ts.map
