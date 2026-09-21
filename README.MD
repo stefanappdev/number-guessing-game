@@ -10,5 +10,9 @@ HOW THIS GAME WORKS
 
 3. At the end of each round, you will be prompted to continue or exit the program.
 
+4. To start the game cd into number-guessing-game directory and run command npm run startGame 
+
+Roadmap.sh project URL: https://roadmap.sh/projects/number-guessing-game
+
 
 Have fun and Good luck!
