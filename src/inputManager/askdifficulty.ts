@@ -1,3 +1,5 @@
+import validateGameMode from "../game/inputValidators/gameModeValidator";
+
  const readLinePromises=require('readline/promises')
  
 
@@ -13,12 +15,26 @@
    console.log(`Choose your difficulty:
         1. Easy   (10 chances)
         2. Normal (5 chances)
-        3. Hard   (3 chances)`.trim());
+        3. Hard   (3 chances)\n`.trim());
 
     let userInput=await RLI.question('your choice:'); 
    
     let difficulty:string='';
     let chances:number=0;
+
+    if (validateGameMode(userInput)===false){
+         console.log(`Choose your difficulty:
+        1. Easy   (10 chances)
+        2. Normal (5 chances)
+        3. Hard   (3 chances)\n`.trim());
+        while(true){
+            let userInputReconfirm=await RLI.question(' Re-enter your choice:');
+            userInput=userInputReconfirm
+            if(validateGameMode(userInput)){
+                break
+            }
+        }
+    }
 
     if(userInput==='3'){
         difficulty='hard'

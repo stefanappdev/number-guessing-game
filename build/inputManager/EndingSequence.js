@@ -10,12 +10,12 @@ const restartGame = async () => {
         input: process.stdin,
         output: process.stdout
     });
-    let resetOption = await RLI.question('Would like to restart the game (Y) or exit (N) ?');
-    if (resetOption === 'Y') {
+    let resetOption = await RLI.question('Would like to restart the game (Y) or exit (N)?');
+    if (resetOption === 'Y' || resetOption === 'y') {
         RLI.close();
         (0, Game_1.default)();
     }
-    else if (resetOption === 'N') {
+    else if (resetOption === 'N' || resetOption === 'n') {
         console.log('exitting the Game...');
         RLI.close();
         process.exit(0);

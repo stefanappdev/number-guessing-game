@@ -6,8 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "nodemon ./build/game/index.js",
+    "startGame":"node ./build/game/index.js",
     "build":"tsc -b"
-
+ 
   },
   "repository": {
     "type": "git",
